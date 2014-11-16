@@ -10,6 +10,8 @@ ENV RUBY_TARBALL_MD5 a7c3e5fec47eff23091b566e9e1dac1b
 RUN apt-get -q update && \
   DEBIAN_FRONTEND=noninteractive apt-get -qy --no-install-recommends install \
     build-essential \
+    git \
+    wget \
     curl \
     libffi-dev \
     libreadline6-dev \
