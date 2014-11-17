@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:14.04.1
 MAINTAINER Adam Blaschke
 
 RUN echo 'gem: --no-document' > /usr/local/etc/gemrc
@@ -13,6 +13,7 @@ RUN apt-get -q update && \
     git \
     wget \
     curl \
+    ca-certificates \
     libffi-dev \
     libreadline6-dev \
     libssl-dev \
