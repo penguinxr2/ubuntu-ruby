@@ -18,6 +18,7 @@ RUN apt-get -q update && \
     libreadline6-dev \
     libssl-dev \
     libyaml-dev \
+    ssh \
     zlib1g-dev && \
   curl -s -O http://cache.ruby-lang.org/pub/ruby/$RUBY_MAJOR_MINOR_VERSION/ruby-$RUBY_VERSION.tar.bz2 && \
   [ $(md5sum ruby-$RUBY_VERSION.tar.bz2 | awk '{ print $1 }') = $RUBY_TARBALL_MD5 ] && \
